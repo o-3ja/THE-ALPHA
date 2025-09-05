@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Tahoma', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+            color: #333;
+        }
+        header.hero {
+            background: url('https://images.unsplash.com/photo-1581090700227-4c4f50b8c5f3?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            height: 60vh;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        header.hero::after {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.5);
+        }
+        header.hero h1, header.hero p, header.hero img {
+            position: relative;
+            z-index: 2;
+        }
+        header.hero img {
+            max-width: 120px;
+            border-radius: 50%;
+            border: 3px solid #fff;
+        }
+        header.hero h1 {
+            font-size: 3em;
+            margin: 15px 0 10px;
+        }
+        header.hero p {
+            font-size: 1.5em;
+        }
+        section {
+            padding: 40px 20px;
+            margin: 20px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        section h2 {
+            color: #ff6600;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        section p {
+            line-height: 1.8;
+            font-size: 1.1em;
+            text-align: center;
+        }
+        .about img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+        .service {
+            background: #fafafa;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .service:hover {
+            transform: translateY(-5px);
+        }
+        .service i {
+            font-size: 2.5em;
+            color: #0099ff;
+            margin-bottom: 10px;
+        }
+        .service img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        .contact {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            font-size: 1.2em;
+            align-items: center;
+        }
+        .contact i {
+            margin-left: 10px;
+            color: #0099ff;
+        }
+        .whatsapp-btn {
+            display: inline-block;
+            background: #25d366;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin-top: 15px;
+            transition: background 0.3s ease;
+        }
+        .whatsapp-btn i {
+            margin-left: 8px;
+        }
+        .whatsapp-btn:hover {
+            background: #1ebd5a;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="hero">
+    <img src="logo.jpg" alt="شعار المشروع">
+    <h1>Light Project</h1>
+    <p>خبراء التمديدات والتوصيلات الكهربائية</p>
+</header>
+
+<section class="about">
+    <h2><i class="fas fa-bolt"></i> عن المشروع</h2>
+    <p>
+        لمتابعة التمديدات والتوصيلات الكهربائية وفحص منظومة الكهرباء في المباني
+        وتصميم المخططات المعمارية الكهربائية من حيث توزيع الإنارة واحتياج الأسلاك.
+    </p>
+    <img src="https://images.unsplash.com/photo-1581092160620-4c4dbe1d1e20?auto=format&fit=crop&w=1350&q=80" alt="Electrical work">
+</section>
+
+<section>
+    <h2><i class="fas fa-tools"></i> خدماتنا</h2>
+    <div class="services">
+        <div class="service">
+            <i class="fas fa-lightbulb"></i>
+            <h3>تصميم الإنارة</h3>
+            <p>تصميم مخططات الإنارة بدقة لتوزيع مثالي.</p>
+            <img src="https://images.pexels.com/photos/989872/pexels-photo-989872.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Lighting">
+        </div>
+        <div class="service">
+            <i class="fas fa-plug"></i>
+            <h3>تمديدات كهربائية</h3>
+            <p>تنفيذ تمديدات عالية الجودة للأسلاك والمخارج.</p>
+            <img src="https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Wiring">
+        </div>
+        <div class="service">
+            <i class="fas fa-drafting-compass"></i>
+            <h3>تصميم المخططات</h3>
+            <p>إعداد مخططات كهربائية معمارية متكاملة.</p>
+            <img src="https://images.unsplash.com/photo-1529429617124-95b109e86bb8?auto=format&fit=crop&w=1350&q=80" alt="Blueprint">
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2><i class="fas fa-address-card"></i> تواصل معنا</h2>
+    <div class="contact">
+        <p><i class="fas fa-user"></i> المهندس علي عبدالله ضلفان آل جالي</p>
+        <p><i class="fas fa-phone"></i> 0550057934</p>
+        <p><i class="fas fa-envelope"></i> ali793434@hotmail.com</p>
+        <a class="whatsapp-btn" href="https://wa.me/966550057934" target="_blank">
+            <i class="fab fa-whatsapp"></i> تواصل عبر واتساب
+        </a>
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 مشروع Light - جميع الحقوق محفوظة
+</footer>
+
+</body>
+</html>
